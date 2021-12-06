@@ -2,6 +2,7 @@ import React from 'react'
 import { FlatList, StyleSheet, Text, Image, TouchableOpacity, View } from 'react-native'
 import tw from 'tailwind-react-native-classnames'
 import { Icon } from 'react-native-elements'
+import { useNavigation } from '@react-navigation/core'
 
 const data = [
     {
@@ -19,6 +20,9 @@ const data = [
 ]
 
 const NavigationOptions = () => {
+
+    const navigation = useNavigation();
+
     return (
         <View>
             <FlatList       //vertical list by default, but i want to make it horizontal
@@ -27,6 +31,7 @@ const NavigationOptions = () => {
                 keyExtractor={(item)=> item.id}
                 renderItem={({item})=> (
                     <TouchableOpacity
+                    onPress={()=>navigation.navigate(item.screen)}
                     style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}>
                        <View>
                            <Image
