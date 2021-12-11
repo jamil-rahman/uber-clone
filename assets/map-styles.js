@@ -41,11 +41,47 @@ export const mapStyles = [
       ]
     },
     {
+      "featureType": "administrative.locality",
+      "elementType": "labels.text.fill",
+      "stylers": [
+        {
+          "color": "#4d5763"
+        },
+        {
+          "visibility": "on"
+        }
+      ]
+    },
+    {
+      "featureType": "administrative.locality",
+      "elementType": "labels.text.stroke",
+      "stylers": [
+        {
+          "color": "#4d5763"
+        },
+        {
+          "visibility": "off"
+        }
+      ]
+    },
+    {
       "featureType": "poi",
       "elementType": "geometry",
       "stylers": [
         {
           "color": "#eeeeee"
+        }
+      ]
+    },
+    {
+      "featureType": "poi",
+      "elementType": "labels.icon",
+      "stylers": [
+        {
+          "color": "#6e6f71"
+        },
+        {
+          "visibility": "on"
         }
       ]
     },
@@ -64,6 +100,18 @@ export const mapStyles = [
       "stylers": [
         {
           "color": "#e5e5e5"
+        }
+      ]
+    },
+    {
+      "featureType": "poi.park",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#a6e1b3"
+        },
+        {
+          "visibility": "on"
         }
       ]
     },
@@ -105,6 +153,18 @@ export const mapStyles = [
     },
     {
       "featureType": "road.highway",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#9eb3de"
+        },
+        {
+          "visibility": "on"
+        }
+      ]
+    },
+    {
+      "featureType": "road.highway",
       "elementType": "labels.text.fill",
       "stylers": [
         {
@@ -141,10 +201,42 @@ export const mapStyles = [
     },
     {
       "featureType": "water",
+      "stylers": [
+        {
+          "color": "#16d9f3"
+        },
+        {
+          "visibility": "simplified"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
       "elementType": "geometry",
       "stylers": [
         {
           "color": "#c9c9c9"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "geometry.fill",
+      "stylers": [
+        {
+          "color": "#aed7f5"
+        },
+        {
+          "visibility": "on"
+        }
+      ]
+    },
+    {
+      "featureType": "water",
+      "elementType": "geometry.stroke",
+      "stylers": [
+        {
+          "visibility": "off"
         }
       ]
     },
