@@ -8,13 +8,13 @@ const data = [
         id: '123',
         icon: 'home',
         location: 'Home',
-        destination: "Green Road, Dhaka, Bangladesh",
+        destination: "Green Road, Dhaka",
     },
     {
         id:'456',
         icon: 'briefcase',
         location: 'Work',
-        destiantion: 'Independent University, Bangladesh,',
+        destination: 'Independent University, Bangladesh,',
     },
 ];
 
@@ -28,7 +28,7 @@ const NavFavorites = () => {
             <View style={[tw`bg-gray-200`, { height: 0.5}]} />
 
     )}
-        renderItem={({ item:{ location, destiantion, icon } })=>(
+        renderItem={({ item:{ location, destination, icon } })=>(
             <TouchableOpacity style={tw`flex-row items-center p-5`}>
                 <Icon 
                     style={tw`mr-4 rounded-full bg-gray-300 p-3`}
@@ -39,7 +39,7 @@ const NavFavorites = () => {
                 />
                 <View>
                     <Text style={tw`font-semibold text-lg`}>{location}</Text>
-                    <Text style={tw`text-gray-500`}>{destiantion}</Text>
+                    <Text style={tw`text-gray-500`}>{destination}</Text>
                 </View>
             </TouchableOpacity>
             
