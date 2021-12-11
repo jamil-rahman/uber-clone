@@ -4,8 +4,14 @@ import tw from 'tailwind-react-native-classnames';
 import NavigationOptions from '../components/NavigationOptions';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import {GOOGLE_MAPS_KEY} from "@env"
+import { useDispatch } from 'react-redux';
+import { setDestination, setOrigin } from '../slices/navSlice'
+import NavFavorites from '../components/NavFavorites';
+
 
 const HomeScreen = () => {
+    const dispatch = useDispatch();
+
     return (
         <SafeAreaView style={tw`bg-white h-full`}>
             <View style={tw`p-5`}>
@@ -39,17 +45,20 @@ const HomeScreen = () => {
                 minLength={2}   //minimum lenght of string needed to start searching
                 enablePoweredByContainer= {false}   //removes the poweredByGoogle watermark
                 onPress={(data, details = null)=>{
-                    console.log(data);
-                    console.log(details);
-
+                    dispatch(setOrigin({        //dispatching or sending the information back to the data layer which takes a callback function, whose parameter is an object
+                        location: details.geometry.location,
+                        description: data.description
+                    }))
+                    dispatch(setDestination(null))
                 }}
                 fetchDetails={true}
+                returnKeyType={'search'}
 
 
                 />
 
-
                 <NavigationOptions />
+                <NavFavorites />
             </View>
         </SafeAreaView>
     )
@@ -57,8 +66,3 @@ const HomeScreen = () => {
 
 export default HomeScreen
 
-const styles = StyleSheet.create({
-    text: {
-        color: "blue",
-    }
-})
