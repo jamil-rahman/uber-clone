@@ -27,7 +27,7 @@ const HomeScreen = () => {
                 />
 
                 <GooglePlacesAutocomplete 
-                placeholder="Where from?"
+                placeholder="Enter pickup point"
                 nearbyPlacesAPI="GooglePlacesSearch"
                 debounce={400}  //searches after 400ms after typing is finished
                 styles={{
