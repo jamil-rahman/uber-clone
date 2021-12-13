@@ -1,6 +1,8 @@
 import { createStackNavigator } from '@react-navigation/stack'
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { Icon } from 'react-native-elements'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 import tw from 'tailwind-react-native-classnames'
 import Map from '../components/Map'
 import NavigateCard from '../components/NavigateCard'
