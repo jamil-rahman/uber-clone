@@ -8,13 +8,13 @@ const data = [
         id: '123',
         icon: 'home',
         location: 'Home',
-        destination: "Green Road, Dhaka",
+        destination: "Bashundhara City Complex",
     },
     {
         id:'456',
         icon: 'briefcase',
         location: 'Work',
-        destination: 'Independent University, Bangladesh,',
+        destination: 'Banani Bus Stop',
     },
 ];
 
