@@ -3,8 +3,8 @@ This a mobile application built using [React-Native](https://reactnative.dev/), 
 
 
 ## SCREENSHOTS
-![screenshot alt](https://cdn.discordapp.com/attachments/910610127659368459/920299267493613588/Screenshot_20211214-185954.jpg)
-![screenshot alt](https://cdn.discordapp.com/attachments/910610127659368459/920299243128897566/Screenshot_20211214-185628.jpg)
+![screenshot 1](https://cdn.discordapp.com/attachments/910610127659368459/920299267493613588/Screenshot_20211214-185954.jpg){:height="640px" width="400px"}
+![screenshot 2](https://cdn.discordapp.com/attachments/910610127659368459/920299243128897566/Screenshot_20211214-185628.jpg){:height="640px" width="400px"}
 
 ## Setup
 This project was bootstrapped with with [Create React Native App](https://github.com/expo/create-react-native-app)
